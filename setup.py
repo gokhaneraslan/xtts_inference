@@ -3,7 +3,7 @@ import shutil
 import os
 
 
-SAVE_PATH = "/content/XTTS_V2/model"
+SAVE_PATH = "/content/xtts_inference/model"
 
 
 def download_file_with_wget(url, output_path=None, quiet=False, continue_download=True):
