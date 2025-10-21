@@ -12,7 +12,6 @@ from TTS.tts.layers.xtts.tokenizer import VoiceBpeTokenizer, split_sentence
 from TTS.tts.layers.xtts.xtts_manager import SpeakerManager, LanguageManager
 from TTS.tts.models.base_tts import BaseTTS
 from TTS.utils.io import load_fsspec
-from TTS.tts.configs.xtts_config import XttsConfig
 
 from dataclasses import dataclass
 
@@ -687,7 +686,7 @@ class Xtts(BaseTTS):
         )
 
     @staticmethod
-    def init_from_config(config: XttsConfig, **kwargs):  # pylint: disable=unused-argument
+    def init_from_config(config: "XttsConfig", **kwargs):  # pylint: disable=unused-argument
         return Xtts(config)
 
     def eval(self):  # pylint: disable=redefined-builtin
