@@ -14,6 +14,8 @@ from TTS.tts.models.base_tts import BaseTTS
 from TTS.utils.io import load_fsspec
 from TTS.tts.configs.xtts_config import XttsConfig
 
+from dataclasses import dataclass
+
 
 init_stream_support()
 

@@ -1,6 +1,5 @@
 from dataclasses import dataclass, field
 from typing import List
-from TTS.coqpit import Coqpit
 
 from TTS.tts.configs.shared_configs import BaseTTSConfig
 from TTS.tts.models.xtts import XttsArgs, XttsAudioConfig
